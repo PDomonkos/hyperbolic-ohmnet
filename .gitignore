@@ -1,0 +1,8 @@
+data/bio-tissue-hierarchy/
+data/bio-tissue-labels/
+data/bio-tissue-networks/
+
+results/manifoldLorentz_embedding_dim128_p1_q4_walks_per_node1_walk_length10_context_size10_num_negative_samples1_num_epochs100_test_epochs5_batch_size64_learning_rate0025_lambda02_devicecuda0_num_workers0/reduced_embeddings.pickle
+
+__pycache__/
+utils/__pycache__/
