@@ -1,6 +1,8 @@
 # Hyperbolic representation learning in multi-layer tissue networks
 Pytorch implementation of the OhmNet model [[1]](#1) and its non-Euclidean version to the paper "Hyperbolic representation learning in multi-layer tissue networks."
 
+[ESANN conference poster](ES2025_WED_10_10_21_Pogany_poster.pdf) 
+
 Contact Information: pogany@mit.bme.hu
 
 ## Data availability
