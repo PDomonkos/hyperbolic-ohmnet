@@ -58,5 +58,12 @@ Nature communications, 11(1), 2966.
 
 ## Citation
 ```
-TBA
+@inproceedings{pogany2024hyperbolic,
+  title={Hyperbolic representation learning in multi-layer tissue networks},
+  author={Pog{\'a}ny, Domonkos and Antal, P{\'e}ter},
+  booktitle={Proceedings of the 33th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning (ESANN 2025)},
+  pages={23--28},
+  year={2025},
+  doi={10.14428/esann/2025.ES2025-21}
+}
 ``` 
