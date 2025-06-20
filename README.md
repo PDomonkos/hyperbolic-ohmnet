@@ -1,5 +1,5 @@
 # Hyperbolic representation learning in multi-layer tissue networks
-Pytorch implementation of the OhmNet model [[1]](#1) and its non-Euclidean version to the paper "[Hyperbolic representation learning in multi-layer tissue networks](https://www.esann.org/sites/default/files/proceedings/2025/ES2025-21.pdf)."
+Pytorch implementation of the OhmNet model [[1]](#1) and its non-Euclidean version to the conference paper "[Hyperbolic representation learning in multi-layer tissue networks](https://www.esann.org/sites/default/files/proceedings/2025/ES2025-21.pdf)," and its extended journal version, "Modeling Multi-Layer Tissue Networks in Hyperbolic Space."
 
 [ESANN conference poster](ES2025_WED_10_10_21_Pogany_poster.pdf) 
 
@@ -17,14 +17,18 @@ Before running the notebooks, download the tissue hierarchy, PPI networks, and G
 - `utils/tissue_embedding.py`: Embedding modules for PPI networks corresponding to leaf and internal nodes in the tissue hierarchy.
 - `utils/model.py`: Pytorch implementation of the OhmNet model.
 - `utils/node_classification.py`: Utils for the linear and distance-based node classification tasks.
-- `hyperbolicity.ipynb`: Investigate the hyperbolicity of the PPI networks.
-- `train.ipynb`: Perform unsupervised representation learning and evaluate the embeddings with node classification and graph distortion tasks.
-- `results.ipynb`: Compare the evaluation results for embeddings learned based on different configurations, reproducing *Figure 1.* and *Figure 2.*
+- `hyperbolicity.ipynb`: Investigate the geometry of the multi-layer PPI network, including Gromov's delta hyperbolicity, degree distribution, and its correlation between tissues.
     <div style="text-align:center">
-    <img width="250" src="results/FigRes1.png" />
-    <p>Mean and 95% confidence intervals are shown for the graph distortions for Euclidean and Lorentzian distances during training. Distortions were evaluated on 144 PPI networks corresponding to both leaf and internal tissues.</p>
-    <img width="500" src="results/FigRes2.png" />
-    <p>Cross-validation results for protein function prediction, showing mean AUROC and AUPR metrics with 95% confidence intervals. Metrics are presented for classifiers leveraging global and local information on Euclidean and hyperbolic embeddings across internal and leaf tissues.</p>
+        <img width="250" src="results/FigData1.png" />
+        <p>Degree distribution across tissues.</p>
+    </div>
+- `train.ipynb`: Perform unsupervised representation learning and evaluate the embeddings with node classification and graph distortion tasks.
+- `results.ipynb`: Compare the evaluation results for the different embeddings.
+    <div style="text-align:center">
+        <img width="250" src="results/FigRes1.png" />
+        <p>Mean and 95% confidence intervals are shown for the graph distortions for Euclidean and Lorentzian distances during training. Distortions were evaluated on 144 PPI networks corresponding to both leaf and internal tissues.</p>
+        <img width="500" src="results/FigRes2.png" />
+        <p>Cross-validation results for protein function prediction, showing mean AUROC and AUPR metrics with 95% confidence intervals. Metrics are presented for classifiers leveraging global and local information on Euclidean and hyperbolic embeddings across internal and leaf tissues.</p>
     </div>
 - `visualization.ipynb`: After dimensionality reduction, visualize the tissue-specific protein representations, interactively exploring each embedding space with Poincaré translation. Besides the listed requirements, the [PoincareMaps](https://github.com/facebookresearch/PoincareMaps/tree/main) [[2]](#2) is also needed to perform hyperbolic dimensionality reduction.
     <div style="text-align:center">
