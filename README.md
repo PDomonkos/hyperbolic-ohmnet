@@ -1,5 +1,5 @@
 # Hyperbolic representation learning in multi-layer tissue networks
-Pytorch implementation of the OhmNet model [[1]](#1) and its non-Euclidean version to the conference paper "[Hyperbolic representation learning in multi-layer tissue networks](https://www.esann.org/sites/default/files/proceedings/2025/ES2025-21.pdf)," and its extended journal version, "Modeling Multi-Layer Tissue Networks in Hyperbolic Space."
+Pytorch implementation of the OhmNet model [[1]](#1) and its non-Euclidean version to the conference paper "[Hyperbolic representation learning in multi-layer tissue networks](https://www.esann.org/sites/default/files/proceedings/2025/ES2025-21.pdf)," and its extended journal version, ["Modeling Multi-Layer Tissue Networks in Hyperbolic Space."](https://link.springer.com/article/10.1007/s41109-025-00764-1)
 
 [ESANN conference poster](ES2025_WED_10_10_21_Pogany_poster.pdf) 
 
@@ -70,4 +70,14 @@ Nature communications, 11(1), 2966.
   year={2025},
   doi={10.14428/esann/2025.ES2025-21}
 }
-``` 
+```
+```
+@article{pogany2025modeling,
+  title={Modeling multi-layer tissue networks in hyperbolic space},
+  author={Pog{\'a}ny, Domonkos and Antal, P{\'e}ter},
+  journal={Applied Network Science},
+  year={2025},
+  publisher={Springer},
+  doi={https://doi.org/10.1007/s41109-025-00764-1}
+}
+```
